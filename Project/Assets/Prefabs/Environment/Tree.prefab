@@ -13,12 +13,13 @@ GameObject:
   - component: {fileID: 7239592357778097021}
   - component: {fileID: 7239592357778097018}
   - component: {fileID: 1906977466}
+  - component: {fileID: 1370018056}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7239592357778097023
 Transform:
@@ -73,7 +74,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 2
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -651,23 +652,15 @@ MonoBehaviour:
   m_Colors: []
   m_UnwrapParameters:
     m_HardAngle: 88
-    m_PackMargin: 20
+    m_PackMargin: 40
     m_AngleError: 8
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_IsSelectable: 1
-  m_SelectedFaces: 0b000000
-  m_SelectedEdges:
-  - a: 44
-    b: 45
-  - a: 46
-    b: 44
-  - a: 45
-    b: 47
-  - a: 47
-    b: 46
-  m_SelectedVertices: 2c0000002d0000002e0000002f000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!65 &1906977466
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -679,5 +672,17 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0130892, y: 1.983212, z: 1.0252123}
-  m_Center: {x: 0.5010338, y: 0.991606, z: -0.49151707}
+  m_Size: {x: 1.0130892, y: 4.0807743, z: 1.0252123}
+  m_Center: {x: 0.5010338, y: 2.0403872, z: -0.49151707}
+--- !u!114 &1370018056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7239592357778097016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e676996ab62a72140acea0131f56583e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
