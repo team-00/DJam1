@@ -30,8 +30,15 @@ public class CharController : MonoBehaviour
 		ownAnimator.SetFloat("MovementSpeed", currentMoveSpeed);
 		
 		dir = new Vector3((vInput + hInput) * .5f, 0f, (vInput - hInput) * .5f).normalized * currentMoveSpeed * Time.deltaTime;
-		if (dir.sqrMagnitude > 0f) currentDirectionTarget = Quaternion.LookRotation(dir);
+		if (currentMoveSpeed > 0f) currentDirectionTarget = Quaternion.LookRotation(dir);
 		transform.rotation = Quaternion.RotateTowards(transform.rotation, currentDirectionTarget, 5f);
 		transform.Translate(dir * moveSpeed, Space.World);
+
+		if (Input.GetMouseButtonDown(0)) HandleMouseClick();
+	}
+
+	private void HandleMouseClick()
+	{
+		Debug.Log("click");
 	}
 }
