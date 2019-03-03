@@ -10,12 +10,12 @@ public class Monster : MonoBehaviour
 	[SerializeField] private float chaseSpeed;
 	[SerializeField] private float patrolSpeed;
 	[SerializeField] private Transform[] patrolPoints;
+	[SerializeField] private int currentPatrolPointTarget;
 
 	private CharController player;
 	private NavMeshAgent agent;
 	private NavMeshPath path;
 
-	private int currentPatrolPointTarget;
 
 	private void Start()
 	{
@@ -23,14 +23,13 @@ public class Monster : MonoBehaviour
 		path = new NavMeshPath();
 		if (agent == null) agent = transform.parent.GetComponent<NavMeshAgent>();
 		player = GameManager.Instance.Player;
-		currentPatrolPointTarget = 0;
 	}
 
 	private void Update()
 	{
 		if (agent.CalculatePath(player.transform.position, path))
 		{
-
+			player.targeted = true;
 			agent.SetPath(path);
 			agent.speed = chaseSpeed;
 		}
@@ -38,10 +37,11 @@ public class Monster : MonoBehaviour
 		else
 		{
 			currentPatrolPointTarget = 
-				Vector3.Distance(transform.position, patrolPoints[currentPatrolPointTarget].position) < .1f 
+				Vector3.Distance(transform.position, patrolPoints[currentPatrolPointTarget].position) < 1f 
 				? (currentPatrolPointTarget + 1) % patrolPoints.Length 
 				: currentPatrolPointTarget;
 
+			player.targeted = false;
 			agent.CalculatePath(patrolPoints[currentPatrolPointTarget].position, path);
 			agent.SetPath(path);
 			agent.speed = patrolSpeed;
@@ -52,15 +52,14 @@ public class Monster : MonoBehaviour
 
 	public void SpawnFootStep(int footID)
 	{
-		var footstep = Instantiate(footstepPrefab, footstepPositions[footID].position, Quaternion.identity);
+		Instantiate(footstepPrefab, footstepPositions[footID].position, Quaternion.identity);
 	}
 
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player") && player.enabled == true)
 		{
-			player.enabled = false;
-			other.GetComponent<Animator>().SetTrigger("Death");
+			player.TriggerDeath();
 		}
 	}
 }

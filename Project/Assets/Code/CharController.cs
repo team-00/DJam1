@@ -5,13 +5,19 @@ using UnityEngine;
 
 public class CharController : MonoBehaviour
 {
+	#region Variables
 	public Camera MainCam;
 	public Camera MonsterCam;
 	public Transform KeyCarryTransform;
 	public float StandardMoveSpeed;
 	public float SlowMoveSpeed;
 	public float maxInteractionDistance;
+	public float sanityDrainOnRest;
+	public float sanityDrainStandard;
+	public float sanityDrainScared;
+	public float hungerDrain;
 
+	internal bool targeted;
 	internal bool Sitting;
 	private Key currentlyCarriedKey;
 	internal Key CurrentlyCarriedKey
@@ -34,6 +40,10 @@ public class CharController : MonoBehaviour
 	private float currentMoveSpeed;
 	private Vector3 dir;
 
+	private CharacterStats stats;
+	private float currentSanityDrain;
+	private float currentHungerDrain;
+	#endregion
 
 	private void Awake()
 	{
@@ -42,6 +52,9 @@ public class CharController : MonoBehaviour
 
 		GameManager.Instance.RegisterPlayer(this);
 		MoveSpeed = StandardMoveSpeed;
+		currentSanityDrain = sanityDrainStandard;
+		currentHungerDrain = hungerDrain;
+		stats = GameManager.Instance.CharacterStats;
 	}
 
 	void Update()
@@ -50,6 +63,8 @@ public class CharController : MonoBehaviour
 		if (Input.GetMouseButtonDown(0)) HandleMouseClick();
 		if (Input.GetKeyDown(KeyCode.Space)) HandleSpacePress(true);
 		else if (Input.GetKeyUp(KeyCode.Space)) HandleSpacePress(false);
+
+		UpdateUI();
 	}
 
 	private void HandleMovement()
@@ -91,11 +106,26 @@ public class CharController : MonoBehaviour
 		MonsterCam.gameObject.SetActive(spacePressed);
 	}
 
+	private void UpdateUI()
+	{
+		stats.Hunger = Mathf.Clamp(stats.Hunger - currentHungerDrain * Time.deltaTime, 0f, 100f);
+		stats.Sanity = Mathf.Clamp(stats.Sanity - (targeted ? sanityDrainScared : currentSanityDrain) * Time.deltaTime, 0f, 100f);
+
+		if (stats.Hunger == 0 || stats.Sanity == 0) TriggerDeath();
+	}
+
 	internal void ToggleSitting(Vector3 newLookTarget = default)
 	{
 		Sitting = !Sitting;
 		if(newLookTarget != default) currentDirectionTarget = Quaternion.LookRotation(newLookTarget);
 		var collider = GetComponentInChildren<BoxCollider>();
 		collider.center = Sitting ? new Vector3(0f, .8f, 0f) : new Vector3(0f, .5f, 0f);
+		currentSanityDrain = Sitting ? sanityDrainOnRest : sanityDrainStandard;
+	}
+
+	internal void TriggerDeath()
+	{
+		ownAnimator.SetTrigger("Death");
+		enabled = false;
 	}
 }
