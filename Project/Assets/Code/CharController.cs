@@ -113,7 +113,6 @@ public class CharController : MonoBehaviour
 	private void UpdateHealthStatus()
 	{
 		stats.Hunger = Mathf.Clamp(stats.Hunger - currentHungerDrain * Time.deltaTime, 0f, 100f);
-		Debug.Log((monsterVisionActive ? monsterVisionDrain : 0f));
 		stats.Sanity = Mathf.Clamp(stats.Sanity - ((targeted ? sanityDrainScared : currentSanityDrain) + (monsterVisionActive ? monsterVisionDrain : 0f)) * Time.deltaTime, 0f, 100f);
 		float heartbeatIntensity = 1f - stats.Sanity / 100f;
 		HeartbeatSource.volume = heartbeatIntensity;
@@ -141,6 +140,11 @@ public class CharController : MonoBehaviour
 
 	private IEnumerator DeathCamStuff()
 	{
+		if (monsterVisionActive)
+		{
+			MonsterCam.gameObject.SetActive(false);
+			yield return new WaitForSeconds(.2f);
+		}
 		MonsterCam.gameObject.SetActive(true);
 		yield return new WaitForSeconds(.2f);
 		MonsterCam.gameObject.SetActive(false);
