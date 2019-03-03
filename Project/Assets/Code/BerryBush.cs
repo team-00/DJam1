@@ -8,8 +8,16 @@ public class BerryBush : MonoBehaviour, IClickable
 
     [SerializeField] private GameObject[] Berries;
 	[SerializeField] private float berryRegrowTime = 60f;
+	[SerializeField] private AudioClip[] harvestSounds;
 
-    public void OnClick(CharController player)
+	private AudioSource audioSource;
+
+	private void Awake()
+	{
+		audioSource = GetComponent<AudioSource>();
+	}
+
+	public void OnClick(CharController player)
     {
         if (!canNotBeHarvestedAnymore)
         {
@@ -19,8 +27,9 @@ public class BerryBush : MonoBehaviour, IClickable
     }
 
     private void HarvestBerries()
-    {
-        canNotBeHarvestedAnymore = true;
+	{
+		audioSource.PlayOneShot(harvestSounds[Random.Range(0, harvestSounds.Length)]);
+		canNotBeHarvestedAnymore = true;
         foreach (var berry in Berries)
         {
             berry.SetActive(false);

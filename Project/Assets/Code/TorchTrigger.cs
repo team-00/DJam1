@@ -8,20 +8,13 @@ public class TorchTrigger : MonoBehaviour
 
     private int colliderCount = 0;
 
-	private void Update()
-	{
-		//Debug.Log(colliderCount);
-	}
-
 	private void OnTriggerEnter(Collider other)
     {
-		Debug.Log(other.gameObject.name);
         colliderCount++;
     }
 
 	private void OnTriggerExit(Collider other)
 	{
-		Debug.Log(other.gameObject.name);
 		colliderCount--;
     }
 }

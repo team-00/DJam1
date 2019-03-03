@@ -10,6 +10,7 @@ public class CharController : MonoBehaviour
 	public Camera MonsterCam;
 	public Transform KeyCarryTransform;
 	public AudioSource HeartbeatSource;
+	public AudioSource UniversalAudioSource;
 	public float StandardMoveSpeed;
 	public float SlowMoveSpeed;
 	public float maxInteractionDistance;

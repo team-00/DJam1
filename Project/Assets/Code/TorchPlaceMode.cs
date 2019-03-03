@@ -9,12 +9,15 @@ public class TorchPlaceMode : MonoBehaviour
     [SerializeField] private Transform spawnParent;
     [SerializeField] private GameObject inventoryUI, characterStatsUI, torchPrefab;
     [SerializeField] private LayerMask GroundLayer;
+	[SerializeField] private AudioClip[] placeTorchSounds;
 
     private GameObject torch;
+	private AudioSource audioSource;
 
     private void Start()
     {
         gameObject.SetActive(false);
+		audioSource = GameManager.Instance.Player.UniversalAudioSource;
     }
 
     private void Update()
@@ -44,7 +47,7 @@ public class TorchPlaceMode : MonoBehaviour
         HandleUIVisibility();
         if (success)
         {
-            Debug.Log("PlaceTorchSound");
+			audioSource.PlayOneShot(placeTorchSounds[Random.Range(0, placeTorchSounds.Length)]);
             torch.GetComponent<Torch>().EnableTorch();
             torch = null;
         }

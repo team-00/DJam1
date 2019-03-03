@@ -7,10 +7,14 @@ public class InventoryPanel : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI woodAmount, flintAmount, berriesAmount;
     [SerializeField] private TorchPlaceMode torchPlaceMode;
+	[SerializeField] private AudioClip[] craftSounds, eatSounds;
+
+	private AudioSource audioSource;
 
     internal void Awake()
     {
         GameManager.Instance.Inventory.ConnectPanel(this);
+		audioSource = GameManager.Instance.Player.UniversalAudioSource;
     }
 
     internal int WoodAmount
@@ -39,7 +43,7 @@ public class InventoryPanel : MonoBehaviour
     {
         if (GameManager.Instance.Inventory.Craft())
         {
-            Debug.Log("CraftSound");
+			audioSource.PlayOneShot(craftSounds[Random.Range(0, craftSounds.Length)]);
             torchPlaceMode.Activate();
         }
         else
@@ -49,9 +53,9 @@ public class InventoryPanel : MonoBehaviour
     public void Eat()
     {
         if (GameManager.Instance.Inventory.Consume())
-        {
-            Debug.Log("EatSound");
-            GameManager.Instance.CharacterStats.Satiate();
+		{
+			audioSource.PlayOneShot(eatSounds[Random.Range(0, eatSounds.Length)]);
+			GameManager.Instance.CharacterStats.Satiate();
         }
         else
             Debug.Log("ErrorSound");
