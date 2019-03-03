@@ -71,7 +71,7 @@ LightmapSettings:
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
-    m_BakeBackend: 2
+    m_BakeBackend: 1
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 256
@@ -5311,7 +5311,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1460
+  m_Name: pb_Mesh-17960
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -6029,7 +6029,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1470
+  m_Name: pb_Mesh-17970
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -8622,7 +8622,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1472
+  m_Name: pb_Mesh-17972
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -10161,7 +10161,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1468
+  m_Name: pb_Mesh-17968
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -14615,7 +14615,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1462
+  m_Name: pb_Mesh-17962
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -15617,7 +15617,8 @@ PrefabInstance:
       propertyPath: MonsterCam
       value: 
       objectReference: {fileID: 1748270712}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1217481863, guid: f9b3ddf7aeca86f4d84ee28db4d25d32, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f9b3ddf7aeca86f4d84ee28db4d25d32, type: 3}
 --- !u!1001 &1276247765860802915
 PrefabInstance:
