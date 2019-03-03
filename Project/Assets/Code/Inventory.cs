@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory
 {
-    private int wood, flint, berries, torches;
+    private int wood, flint, berries;
 
     internal int Wood
     {
@@ -24,15 +24,6 @@ public class Inventory
             panel.FlintAmount = value;
         }
     }
-    internal int Torches
-    {
-        get { return torches; }
-        set
-        {
-            torches = value;
-            panel.TorchAmount = value;
-        }
-    }
     internal int Berries
     {
         get { return berries; }
@@ -47,10 +38,9 @@ public class Inventory
 
     internal Inventory()
     {
-        wood = 0;
-        flint = 0;
-        torches = 0;
-        berries = 0;
+        wood = 1;
+        flint = 1;
+        berries = 5;
     }
 
     internal void ConnectPanel(InventoryPanel panel)
@@ -65,9 +55,14 @@ public class Inventory
         {
             Wood -= 1;
             Flint -= 1;
-            Torches += 1;
         }
         return canCraft;
+    }
+
+    internal void UndoCraft()
+    {
+        Wood += 1;
+        Flint += 1;
     }
 
     internal bool Consume()
