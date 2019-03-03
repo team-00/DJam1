@@ -2,12 +2,23 @@
 
 public class GameManager
 {
-	internal CharController Player;
-	internal Camera CurrentCam
-	{
-		get { return Player.MainCam; }
-	}
+    internal CharController Player;
+    internal Camera CurrentCam
+    {
+        get { return Player.MainCam; }
+    }
 
+    private CharacterStats characterStats;
+    internal CharacterStats CharacterStats
+    {
+        get { return characterStats ?? (characterStats = new CharacterStats()); }    
+    }
+
+    private Inventory inventory;
+    internal Inventory Inventory
+    {
+        get { return inventory ?? (inventory = new Inventory()); }
+    }
 
 	#region Access and cctor
 	private static GameManager instance;
