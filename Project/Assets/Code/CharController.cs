@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CharController : MonoBehaviour
 {
 	public Camera MainCam;
+	public Camera MonsterCam;
 	public Transform KeyCarryTransform;
 	public float StandardMoveSpeed;
 	public float SlowMoveSpeed;
@@ -46,6 +48,8 @@ public class CharController : MonoBehaviour
 	{
 		HandleMovement();
 		if (Input.GetMouseButtonDown(0)) HandleMouseClick();
+		if (Input.GetKeyDown(KeyCode.Space)) HandleSpacePress(true);
+		else if (Input.GetKeyUp(KeyCode.Space)) HandleSpacePress(false);
 	}
 
 	private void HandleMovement()
@@ -80,6 +84,11 @@ public class CharController : MonoBehaviour
 			if (clickable != null && dist < maxInteractionDistance)
 				clickable.OnClick(this);
 		}
+	}
+
+	private void HandleSpacePress(bool spacePressed)
+	{
+		MonsterCam.gameObject.SetActive(spacePressed);
 	}
 
 	internal void ToggleSitting(Vector3 newLookTarget = default)
