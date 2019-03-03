@@ -12,6 +12,7 @@ public class CharController : MonoBehaviour
 	public Transform KeyCarryTransform;
 	public AudioSource HeartbeatSource;
 	public AudioSource UniversalAudioSource;
+    public AudioSource UIButtonClickSource;
 	public float StandardMoveSpeed;
 	public float SlowMoveSpeed;
 	public float maxInteractionDistance;
@@ -127,6 +128,11 @@ public class CharController : MonoBehaviour
 
 		if (stats.Hunger == 0 || stats.Sanity == 0) TriggerDeath();
 	}
+
+    internal void PlayInventorySound()
+    {
+        UIButtonClickSource.Play();
+    }
 
 	internal void ToggleSitting(Vector3 newLookTarget = default)
 	{
