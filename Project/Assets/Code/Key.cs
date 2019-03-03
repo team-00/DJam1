@@ -7,8 +7,18 @@ public class Key : MonoBehaviour, IClickable
 	public enum KeyType { Plus, Minus, Square, Circle }
 	public KeyType OwnKeyType;
 
+	[SerializeField] private AudioClip[] keySounds;
+
+	private AudioSource audioSource;
+
+	private void Awake()
+	{
+		audioSource = GetComponent<AudioSource>();
+	}
+
 	public void OnClick(CharController player)
 	{
+		PlayKeySound();
 		if (player.CurrentlyCarriedKey == null)
 		{
 			player.CurrentlyCarriedKey = this;
@@ -23,5 +33,10 @@ public class Key : MonoBehaviour, IClickable
 			transform.position = new Vector3(transform.position.x, 0f, transform.position.z);
 			transform.localRotation = Quaternion.identity;
 		}
+	}
+
+	public void PlayKeySound()
+	{
+		audioSource.PlayOneShot(keySounds[Random.Range(0, keySounds.Length)]);
 	}
 }

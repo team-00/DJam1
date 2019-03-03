@@ -9,6 +9,7 @@ public class CharController : MonoBehaviour
 	public Camera MainCam;
 	public Camera MonsterCam;
 	public Transform KeyCarryTransform;
+	public AudioSource HeartbeatSource;
 	public float StandardMoveSpeed;
 	public float SlowMoveSpeed;
 	public float maxInteractionDistance;
@@ -16,9 +17,11 @@ public class CharController : MonoBehaviour
 	public float sanityDrainStandard;
 	public float sanityDrainScared;
 	public float hungerDrain;
+	public float monsterVisionDrain;
 
 	internal bool targeted;
 	internal bool Sitting;
+	internal bool monsterVisionActive;
 	private Key currentlyCarriedKey;
 	internal Key CurrentlyCarriedKey
 	{
@@ -64,7 +67,7 @@ public class CharController : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Space)) HandleSpacePress(true);
 		else if (Input.GetKeyUp(KeyCode.Space)) HandleSpacePress(false);
 
-		UpdateUI();
+		UpdateHealthStatus();
 	}
 
 	private void HandleMovement()
@@ -104,12 +107,17 @@ public class CharController : MonoBehaviour
 	private void HandleSpacePress(bool spacePressed)
 	{
 		MonsterCam.gameObject.SetActive(spacePressed);
+		monsterVisionActive = spacePressed;
 	}
 
-	private void UpdateUI()
+	private void UpdateHealthStatus()
 	{
 		stats.Hunger = Mathf.Clamp(stats.Hunger - currentHungerDrain * Time.deltaTime, 0f, 100f);
-		stats.Sanity = Mathf.Clamp(stats.Sanity - (targeted ? sanityDrainScared : currentSanityDrain) * Time.deltaTime, 0f, 100f);
+		Debug.Log((monsterVisionActive ? monsterVisionDrain : 0f));
+		stats.Sanity = Mathf.Clamp(stats.Sanity - ((targeted ? sanityDrainScared : currentSanityDrain) + (monsterVisionActive ? monsterVisionDrain : 0f)) * Time.deltaTime, 0f, 100f);
+		float heartbeatIntensity = 1f - stats.Sanity / 100f;
+		HeartbeatSource.volume = heartbeatIntensity;
+		HeartbeatSource.pitch = .8f + heartbeatIntensity;
 
 		if (stats.Hunger == 0 || stats.Sanity == 0) TriggerDeath();
 	}
@@ -126,6 +134,21 @@ public class CharController : MonoBehaviour
 	internal void TriggerDeath()
 	{
 		ownAnimator.SetTrigger("Death");
+		HeartbeatSource.enabled = false;
+		StartCoroutine(DeathCamStuff());
 		enabled = false;
+	}
+
+	private IEnumerator DeathCamStuff()
+	{
+		MonsterCam.gameObject.SetActive(true);
+		yield return new WaitForSeconds(.2f);
+		MonsterCam.gameObject.SetActive(false);
+		yield return new WaitForSeconds(.2f);
+		MonsterCam.gameObject.SetActive(true);
+		yield return new WaitForSeconds(.2f);
+		MonsterCam.gameObject.SetActive(false);
+		yield return new WaitForSeconds(.5f);
+		MonsterCam.gameObject.SetActive(true);
 	}
 }

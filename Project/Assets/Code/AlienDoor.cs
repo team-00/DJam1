@@ -11,6 +11,6 @@ public class AlienDoor : MonoBehaviour, IClickable
 
 	public void AddKey(Key keyToAdd)
 	{
-
+		keyToAdd.PlayKeySound();
 	}
 }

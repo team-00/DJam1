@@ -40,4 +40,23 @@ public class InventoryPanel : MonoBehaviour
             berriesAmount.text = value.ToString();
         }
     }
+
+    public void Craft()
+    {
+        if (GameManager.Instance.Inventory.Craft())
+            Debug.Log("CraftSound");
+        else
+            Debug.Log("ErrorSound");
+    }
+
+    public void Eat()
+    {
+        if (GameManager.Instance.Inventory.Consume())
+        {
+            Debug.Log("EatSound");
+            GameManager.Instance.CharacterStats.Satiate();
+        }
+        else
+            Debug.Log("ErrorSound");
+    }
 }

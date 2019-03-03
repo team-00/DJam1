@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8952727171920785161}
+  - component: {fileID: 9042889810596556074}
+  - component: {fileID: 4753260500568103807}
   m_Layer: 0
   m_Name: WhiteBerryBush
   m_TagString: Untagged
@@ -38,6 +40,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &9042889810596556074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4092733977885314281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.2, z: -0.1}
+--- !u!114 &4753260500568103807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4092733977885314281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c2ef2be5ed520841ada3b6b40452def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Berries:
+  - {fileID: 5916948646615739917}
+  - {fileID: 126716329181852916}
+  - {fileID: 8495821040348062772}
+  - {fileID: 8389417312951254477}
+  - {fileID: 5233716499861351809}
+  - {fileID: 2585720170382920670}
+  - {fileID: 7167571189021026242}
 --- !u!1 &4592403620675111960
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,11 +701,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 519010845, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.306
+      value: 0.413
       objectReference: {fileID: 0}
     - target: {fileID: 519010845, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.542
+      value: -0.363
       objectReference: {fileID: 0}
     - target: {fileID: 519010845, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -788,143 +823,14 @@ PrefabInstance:
       propertyPath: m_Faces.Array.data[19].m_TextureGroup
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3617604185720733812, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[0].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[1].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[2].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[3].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[4].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[5].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[6].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[7].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[8].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[9].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[10].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[11].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[12].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[13].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[14].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[15].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[16].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[17].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[18].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[19].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[20].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[21].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[22].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[23].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[24].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[25].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+--- !u!1 &126716329181852916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 519010840, guid: 3bdbc6111da36e74bb27a6b4245e032a,
+    type: 3}
+  m_PrefabInstance: {fileID: 126716328757120748}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &126716329181852913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 519010845, guid: 3bdbc6111da36e74bb27a6b4245e032a,
@@ -1070,143 +976,14 @@ PrefabInstance:
       propertyPath: m_Faces.Array.data[19].m_TextureGroup
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3617604185720733812, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[0].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[1].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[2].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[3].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[4].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[5].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[6].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[7].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[8].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[9].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[10].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[11].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[12].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[13].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[14].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[15].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[16].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[17].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[18].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[19].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[20].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[21].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[22].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[23].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[24].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[25].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+--- !u!1 &2585720170382920670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 519010840, guid: 3bdbc6111da36e74bb27a6b4245e032a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2585720170225070534}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2585720170382920667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 519010845, guid: 3bdbc6111da36e74bb27a6b4245e032a,
@@ -1352,143 +1129,14 @@ PrefabInstance:
       propertyPath: m_Faces.Array.data[19].m_TextureGroup
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3617604185720733812, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[0].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[1].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[2].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[3].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[4].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[5].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[6].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[7].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[8].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[9].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[10].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[11].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[12].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[13].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[14].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[15].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[16].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[17].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[18].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[19].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[20].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[21].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[22].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[23].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[24].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[25].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+--- !u!1 &5233716499861351809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 519010840, guid: 3bdbc6111da36e74bb27a6b4245e032a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5233716499431643033}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5233716499861351812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 519010845, guid: 3bdbc6111da36e74bb27a6b4245e032a,
@@ -1634,143 +1282,14 @@ PrefabInstance:
       propertyPath: m_Faces.Array.data[19].m_TextureGroup
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3617604185720733812, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[0].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[1].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[2].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[3].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[4].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[5].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[6].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[7].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[8].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[9].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[10].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[11].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[12].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[13].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[14].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[15].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[16].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[17].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[18].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[19].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[20].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[21].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[22].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[23].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[24].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[25].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+--- !u!1 &5916948646615739917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 519010840, guid: 3bdbc6111da36e74bb27a6b4245e032a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5916948646236853269}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5916948646615739912 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 519010845, guid: 3bdbc6111da36e74bb27a6b4245e032a,
@@ -1836,13 +1355,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3617604185720733812, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+--- !u!1 &7167571189021026242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 519010840, guid: 3bdbc6111da36e74bb27a6b4245e032a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7167571188502453722}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7167571189021026247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 519010845, guid: 3bdbc6111da36e74bb27a6b4245e032a,
@@ -1988,143 +1508,14 @@ PrefabInstance:
       propertyPath: m_Faces.Array.data[19].m_TextureGroup
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3617604185720733812, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[0].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[1].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[2].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[3].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[4].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[5].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[6].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[7].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[8].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[9].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[10].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[11].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[12].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[13].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[14].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[15].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[16].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[17].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[18].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[19].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[20].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[21].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[22].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[23].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[24].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[25].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+--- !u!1 &8389417312951254477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 519010840, guid: 3bdbc6111da36e74bb27a6b4245e032a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8389417312567412693}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8389417312951254472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 519010845, guid: 3bdbc6111da36e74bb27a6b4245e032a,
@@ -2270,143 +1661,14 @@ PrefabInstance:
       propertyPath: m_Faces.Array.data[19].m_TextureGroup
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3617604185720733812, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[0].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[1].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[2].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[3].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[4].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[5].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[6].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[7].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[8].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[9].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[10].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[11].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[12].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[13].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[14].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[15].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[16].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[17].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[18].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[19].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[20].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[21].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[22].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[23].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[24].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753794767950978253, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-        type: 3}
-      propertyPath: m_Faces.Array.data[25].m_TextureGroup
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+--- !u!1 &8495821040348062772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 519010840, guid: 3bdbc6111da36e74bb27a6b4245e032a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8495821040324386348}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8495821040348062769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 519010845, guid: 3bdbc6111da36e74bb27a6b4245e032a,

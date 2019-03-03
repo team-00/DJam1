@@ -37,4 +37,9 @@ public class CharacterStats
     {
         this.panel = panel;
     }
+
+    internal void Satiate()
+    {
+        Hunger = Mathf.Min(Hunger + 10, 100);
+    }
 }

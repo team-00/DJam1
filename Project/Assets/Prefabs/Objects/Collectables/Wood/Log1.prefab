@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6194279879153479416}
   - component: {fileID: 6384856786043017532}
   - component: {fileID: 373842424325221674}
+  - component: {fileID: 523904392743679226}
+  - component: {fileID: 648574539534442029}
   m_Layer: 0
   m_Name: Log1
   m_TagString: Untagged
@@ -293,3 +295,28 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &523904392743679226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8894955584269760388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cb227020c359c4bbf59a49cbc32c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &648574539534442029
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8894955584269760388}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.051363003, y: 0.4000001, z: 0.06803322}
+  m_Center: {x: 0.025681501, y: 0.20000005, z: -0.015983403}
