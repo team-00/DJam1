@@ -8,4 +8,9 @@ public class AlienDoor : MonoBehaviour, IClickable
 	{
 		Debug.Log("Clicked Alien Door");
 	}
+
+	public void AddKey(Key keyToAdd)
+	{
+
+	}
 }
