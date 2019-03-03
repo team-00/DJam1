@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class InventoryPanel : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI woodAmount, flintAmount, torchAmount, berriesAmount;
+    [SerializeField] private TextMeshProUGUI woodAmount, flintAmount, berriesAmount;
+    [SerializeField] private TorchPlaceMode torchPlaceMode;
 
     internal void Awake()
     {
@@ -26,13 +27,6 @@ public class InventoryPanel : MonoBehaviour
             flintAmount.text = value.ToString();
         }
     }
-    internal int TorchAmount
-    {
-        set
-        {
-            torchAmount.text = value.ToString();
-        }
-    }
     internal int BerriesAmount
     {
         set
@@ -44,7 +38,10 @@ public class InventoryPanel : MonoBehaviour
     public void Craft()
     {
         if (GameManager.Instance.Inventory.Craft())
+        {
             Debug.Log("CraftSound");
+            torchPlaceMode.Activate();
+        }
         else
             Debug.Log("ErrorSound");
     }
