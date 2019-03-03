@@ -11,7 +11,7 @@ public class GameManager
     private CharacterStats characterStats;
     internal CharacterStats CharacterStats
     {
-        get { return characterStats ?? (characterStats = new CharacterStats()); }    
+        get { return characterStats ?? (characterStats = new CharacterStats()); }
     }
 
     private Inventory inventory;
