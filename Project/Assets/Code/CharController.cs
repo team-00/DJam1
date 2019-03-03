@@ -61,7 +61,6 @@ public class CharController : MonoBehaviour
 			hInput = 0f;
 			vInput = 0f;
 			currentMoveSpeed = 0f;
-			Debug.Log("REEE");
 		}
 
 		ownAnimator.SetFloat("MovementSpeed", currentMoveSpeed);
@@ -89,6 +88,5 @@ public class CharController : MonoBehaviour
 		if(newLookTarget != default) currentDirectionTarget = Quaternion.LookRotation(newLookTarget);
 		var collider = GetComponentInChildren<BoxCollider>();
 		collider.center = Sitting ? new Vector3(0f, .8f, 0f) : new Vector3(0f, .5f, 0f);
-		Debug.Log(collider.center);
 	}
 }
