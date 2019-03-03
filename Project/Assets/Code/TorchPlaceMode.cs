@@ -23,7 +23,7 @@ public class TorchPlaceMode : MonoBehaviour
         {
             Physics.Raycast(GameManager.Instance.CurrentCam.ScreenPointToRay(Input.mousePosition), out var hitInfo,20,GroundLayer);
             torch.transform.position = hitInfo.point;
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && torch.GetComponent<Torch>().Placeable)
                 Deactivate(true);
             else if (Input.GetButtonDown("Cancel"))
                 Deactivate(false);

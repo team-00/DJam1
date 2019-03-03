@@ -5,9 +5,18 @@ using UnityEngine.AI;
 
 public class Torch : MonoBehaviour
 {
-    [SerializeField] private BoxCollider bCollider, tCollider;
+    [SerializeField] private BoxCollider bCollider;
+    [SerializeField] private TorchTrigger trigger;
     [SerializeField] private NavMeshObstacle obstacle;
     [SerializeField] private GameObject particles, tLight;
+
+    internal bool Placeable
+    {
+        get
+        {
+            return trigger.Placeable;
+        }
+    }
 
     internal void DisableTorchForPlacement()
     {
@@ -23,6 +32,6 @@ public class Torch : MonoBehaviour
         obstacle.enabled = true;
         particles.SetActive(true);
         tLight.SetActive(true);
-        Destroy(tCollider.gameObject);
+        Destroy(trigger.gameObject);
     }
 }
