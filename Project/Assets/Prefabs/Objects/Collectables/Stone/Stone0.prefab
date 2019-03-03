@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2819196321445652364}
   - component: {fileID: 7700561491490095038}
   - component: {fileID: 3903261846543638947}
+  - component: {fileID: 8928051835136757086}
+  - component: {fileID: 9055435556761487092}
   m_Layer: 0
   m_Name: Stone0
   m_TagString: Untagged
@@ -293,3 +295,28 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 00000000
+--- !u!65 &8928051835136757086
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9122108665181258848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11497454, y: 0.1, z: 0.14108989}
+  m_Center: {x: 0.042512737, y: 0.05, z: -0.05401157}
+--- !u!114 &9055435556761487092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9122108665181258848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96fa7f3703895e54aa719ae70511ed46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

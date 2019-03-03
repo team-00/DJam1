@@ -57,4 +57,24 @@ public class Inventory
     {
         this.panel = panel;
     }
+
+    internal bool Craft()
+    {
+        bool canCraft = wood > 0 && flint > 0;
+        if (canCraft)
+        {
+            Wood -= 1;
+            Flint -= 1;
+            Torches += 1;
+        }
+        return canCraft;
+    }
+
+    internal bool Consume()
+    {
+        bool canConsume = berries > 0;
+        if (canConsume)
+            Berries -= 1;
+        return canConsume;
+    }
 }
