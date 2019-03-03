@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterFollower : MonoBehaviour
 {
 	[SerializeField] private Transform playerTrans;
+	[SerializeField] private Transform listener;
 
 	private Vector3 startOffset;
 	private Vector3 currentVelocity;
@@ -12,6 +13,7 @@ public class CharacterFollower : MonoBehaviour
 	private void Awake()
 	{
 		startOffset = transform.position - playerTrans.position;
+		listener.position = playerTrans.position;
 	}
 
 	private void Update()

@@ -109,7 +109,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 040000000500000006000000050000000700000006000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -126,7 +126,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 08000000090000000a000000090000000b0000000a000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -143,7 +143,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 0c0000000d0000000e0000000d0000000f0000000e000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -160,7 +160,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 100000001100000012000000110000001300000012000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -177,7 +177,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 140000001500000016000000150000001700000016000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -194,7 +194,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   m_SharedVertices:
   - m_Vertices: 000000000d00000016000000
   - m_Vertices: 010000000400000017000000
@@ -405,7 +405,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 040000000500000006000000050000000700000006000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -422,7 +422,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 08000000090000000a000000090000000b0000000a000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -439,7 +439,7 @@ MonoBehaviour:
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 0c0000000d0000000e0000000d0000000f0000000e000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -456,7 +456,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 100000001100000012000000110000001300000012000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -473,7 +473,7 @@ MonoBehaviour:
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 140000001500000016000000150000001700000016000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -490,7 +490,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   m_SharedVertices:
   - m_Vertices: 000000000d00000016000000
   - m_Vertices: 010000000400000017000000
@@ -707,7 +707,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 040000000500000006000000050000000700000006000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -724,7 +724,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 08000000090000000a000000090000000b0000000a000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -741,7 +741,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 0c0000000d0000000e0000000d0000000f0000000e000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -758,7 +758,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 100000001100000012000000110000001300000012000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -775,7 +775,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 140000001500000016000000150000001700000016000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -792,7 +792,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   m_SharedVertices:
   - m_Vertices: 000000000d00000016000000
   - m_Vertices: 010000000400000017000000
@@ -1001,7 +1001,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 040000000500000006000000050000000700000006000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -1018,7 +1018,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 08000000090000000a000000090000000b0000000a000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -1035,7 +1035,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 0c0000000d0000000e0000000d0000000f0000000e000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -1052,7 +1052,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 100000001100000012000000110000001300000012000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -1069,7 +1069,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 140000001500000016000000150000001700000016000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -1086,7 +1086,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   m_SharedVertices:
   - m_Vertices: 000000000d00000016000000
   - m_Vertices: 010000000400000017000000
@@ -1295,7 +1295,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 040000000500000006000000050000000700000006000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -1312,7 +1312,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 08000000090000000a000000090000000b0000000a000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -1329,7 +1329,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 0c0000000d0000000e0000000d0000000f0000000e000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -1346,7 +1346,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 100000001100000012000000110000001300000012000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -1363,7 +1363,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   - m_Indexes: 140000001500000016000000150000001700000016000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -1380,7 +1380,7 @@ MonoBehaviour:
     m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
-    m_TextureGroup: -1
+    m_TextureGroup: 0
   m_SharedVertices:
   - m_Vertices: 000000000d00000016000000
   - m_Vertices: 010000000400000017000000
@@ -1562,9 +1562,9 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 11
+  MaxDistance: 6
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -1585,11 +1585,11 @@ AudioSource:
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: -1.1111112
-      outSlope: -1.1111112
+      inSlope: -0.07371134
+      outSlope: -0.07371134
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.38461536
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1723,8 +1723,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footstepPositions: []
   footstepPrefab: {fileID: 0}
-  chaseSpeed: 0.3
-  patrolSpeed: 0.15
+  chaseSpeed: 0.4
+  patrolSpeed: 0.2
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
