@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 373842424325221674}
   - component: {fileID: 523904392743679226}
   - component: {fileID: 648574539534442029}
+  - component: {fileID: 4186910445262707760}
   m_Layer: 0
   m_Name: Log1
   m_TagString: Untagged
@@ -320,3 +321,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.051363003, y: 0.4000001, z: 0.06803322}
   m_Center: {x: 0.025681501, y: 0.20000005, z: -0.015983403}
+--- !u!54 &4186910445262707760
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8894955584269760388}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

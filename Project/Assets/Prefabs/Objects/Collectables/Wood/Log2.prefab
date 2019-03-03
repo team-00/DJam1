@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3521222922516013490}
   - component: {fileID: 8213948400324298239}
   - component: {fileID: 3942923063856341082}
+  - component: {fileID: 982532181122736118}
   m_Layer: 0
   m_Name: Log2
   m_TagString: Untagged
@@ -72,7 +73,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 2
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -320,3 +321,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cb227020c359c4bbf59a49cbc32c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &982532181122736118
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5344691496029935889}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
