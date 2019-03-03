@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2908022567220566763}
   - component: {fileID: 282497727335182064}
   - component: {fileID: 608978072}
+  - component: {fileID: 402367664057326052}
   m_Layer: 0
   m_Name: RedBerryBush
   m_TagString: Untagged
@@ -169,6 +170,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &402367664057326052
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847447565192904631}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2068091902056839302
 GameObject:
   m_ObjectHideFlags: 0

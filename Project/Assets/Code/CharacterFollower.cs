@@ -13,7 +13,7 @@ public class CharacterFollower : MonoBehaviour
 	private void Awake()
 	{
 		startOffset = transform.position - playerTrans.position;
-		listener.position = playerTrans.position;
+		if(listener != null) listener.position = playerTrans.position;
 	}
 
 	private void Update()

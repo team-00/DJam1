@@ -8,6 +8,7 @@ public class CharController : MonoBehaviour
 	#region Variables
 	public Camera MainCam;
 	public Camera MonsterCam;
+	public Transform StartCampfire;
 	public Transform KeyCarryTransform;
 	public AudioSource HeartbeatSource;
 	public AudioSource UniversalAudioSource;
@@ -20,6 +21,7 @@ public class CharController : MonoBehaviour
 	public float hungerDrain;
 	public float monsterVisionDrain;
 
+	internal bool fullyDead;
 	internal bool targeted;
 	internal bool Sitting;
 	internal bool monsterVisionActive;
@@ -59,6 +61,10 @@ public class CharController : MonoBehaviour
 		currentSanityDrain = sanityDrainStandard;
 		currentHungerDrain = hungerDrain;
 		stats = GameManager.Instance.CharacterStats;
+
+		ToggleSitting(StartCampfire.position);
+
+		enabled = false;
 	}
 
 	void Update()
@@ -155,5 +161,7 @@ public class CharController : MonoBehaviour
 		MonsterCam.gameObject.SetActive(false);
 		yield return new WaitForSeconds(.5f);
 		MonsterCam.gameObject.SetActive(true);
+		
+		fullyDead = true;
 	}
 }

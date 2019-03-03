@@ -18,16 +18,17 @@ public class Key : MonoBehaviour, IClickable
 
 	public void OnClick(CharController player)
 	{
-		PlayKeySound();
 		if (player.CurrentlyCarriedKey == null)
 		{
+			PlayKeySound();
 			player.CurrentlyCarriedKey = this;
 			transform.parent = player.KeyCarryTransform;
 			transform.localPosition = Vector3.zero;
 			transform.localRotation = Quaternion.identity;
 		}
-		else
+		else if(player.CurrentlyCarriedKey == this)
 		{
+			PlayKeySound();
 			player.CurrentlyCarriedKey = null;
 			transform.parent = null;
 			transform.position = new Vector3(transform.position.x, 0f, transform.position.z);
