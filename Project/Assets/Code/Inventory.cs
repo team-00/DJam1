@@ -38,9 +38,9 @@ public class Inventory
 
     internal Inventory()
     {
-        wood = 0;
-        flint = 0;
-        berries = 0;
+        wood = 1;
+        flint = 1;
+        berries = 5;
     }
 
     internal void ConnectPanel(InventoryPanel panel)

@@ -16,7 +16,6 @@ public class MenuManager : MonoBehaviour
     public void GameStart()
     {
 		CharController player = GameManager.Instance.Player;
-        player.PlayInventorySound();
 		player.enabled = true;
 		player.ToggleSitting(player.StartCampfire.position);
         UserInterface.SetActive(true);
@@ -25,19 +24,16 @@ public class MenuManager : MonoBehaviour
 
     public void DisplayControls()
     {
-        GameManager.Instance.Player.PlayInventorySound();
         Controls.SetActive(!Controls.activeInHierarchy);
     }
 
     public void DisplayCredits()
     {
-        GameManager.Instance.Player.PlayInventorySound();
         SceneManager.LoadScene(1);
     }
 
     public void Exit()
     {
-        GameManager.Instance.Player.PlayInventorySound();
         Application.Quit();
     }
 }
