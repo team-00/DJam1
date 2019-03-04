@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4753260500568103807}
   - component: {fileID: 555747498}
   - component: {fileID: 5313799058827169439}
+  - component: {fileID: 8253607958155767001}
   m_Layer: 0
   m_Name: WhiteBerryBush
   m_TagString: Untagged
@@ -194,6 +195,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!208 &8253607958155767001
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4092733977885314281}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4592403620675111960
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,10 +877,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 519010844, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 519010842, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_Faces.Array.data[0].m_TextureGroup
       value: 0
@@ -944,17 +957,21 @@ PrefabInstance:
       propertyPath: m_Faces.Array.data[19].m_TextureGroup
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 519010844, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
---- !u!1 &126716329181852916 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 519010840, guid: 3bdbc6111da36e74bb27a6b4245e032a,
-    type: 3}
-  m_PrefabInstance: {fileID: 126716328757120748}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &126716329181852913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 519010845, guid: 3bdbc6111da36e74bb27a6b4245e032a,
+    type: 3}
+  m_PrefabInstance: {fileID: 126716328757120748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &126716329181852916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 519010840, guid: 3bdbc6111da36e74bb27a6b4245e032a,
     type: 3}
   m_PrefabInstance: {fileID: 126716328757120748}
   m_PrefabAsset: {fileID: 0}
@@ -1013,10 +1030,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 519010844, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 519010842, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_Faces.Array.data[0].m_TextureGroup
       value: 0
@@ -1096,6 +1109,10 @@ PrefabInstance:
     - target: {fileID: 519010842, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_Faces.Array.data[19].m_TextureGroup
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 519010844, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
@@ -1166,10 +1183,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 519010844, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 519010842, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_Faces.Array.data[0].m_TextureGroup
       value: 0
@@ -1249,6 +1262,10 @@ PrefabInstance:
     - target: {fileID: 519010842, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_Faces.Array.data[19].m_TextureGroup
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 519010844, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
@@ -1319,10 +1336,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 519010844, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 519010842, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_Faces.Array.data[0].m_TextureGroup
       value: 0
@@ -1402,6 +1415,10 @@ PrefabInstance:
     - target: {fileID: 519010842, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_Faces.Array.data[19].m_TextureGroup
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 519010844, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
@@ -1545,10 +1562,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 519010844, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 519010842, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_Faces.Array.data[0].m_TextureGroup
       value: 0
@@ -1628,6 +1641,10 @@ PrefabInstance:
     - target: {fileID: 519010842, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_Faces.Array.data[19].m_TextureGroup
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 519010844, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
@@ -1698,10 +1715,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 519010844, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 519010842, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_Faces.Array.data[0].m_TextureGroup
       value: 0
@@ -1781,6 +1794,10 @@ PrefabInstance:
     - target: {fileID: 519010842, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
       propertyPath: m_Faces.Array.data[19].m_TextureGroup
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 519010844, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdbc6111da36e74bb27a6b4245e032a, type: 3}

@@ -33,7 +33,6 @@ public class Monster : MonoBehaviour
 			agent.SetPath(path);
 			agent.speed = chaseSpeed;
 		}
-		
 		else
 		{
 			currentPatrolPointTarget = 
@@ -42,7 +41,7 @@ public class Monster : MonoBehaviour
 				: currentPatrolPointTarget;
 
 			player.targeted = false;
-			agent.CalculatePath(patrolPoints[currentPatrolPointTarget].position, path);
+			if(!agent.CalculatePath(patrolPoints[currentPatrolPointTarget].position, path)) currentPatrolPointTarget = (currentPatrolPointTarget + 1) % patrolPoints.Length;
 			agent.SetPath(path);
 			agent.speed = patrolSpeed;
 		}

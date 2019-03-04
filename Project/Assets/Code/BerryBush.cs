@@ -43,7 +43,7 @@ public class BerryBush : MonoBehaviour, IClickable
 		canNotBeHarvestedAnymore = false;
 		foreach (var berry in Berries)
 		{
-			berry.SetActive(false);
+			berry.SetActive(true);
 		}
 	}
 }

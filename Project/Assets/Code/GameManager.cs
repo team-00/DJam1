@@ -11,12 +11,14 @@ public class GameManager
     private CharacterStats characterStats;
     internal CharacterStats CharacterStats
     {
+		set => characterStats = value;
         get { return characterStats ?? (characterStats = new CharacterStats()); }
     }
 
     private Inventory inventory;
     internal Inventory Inventory
     {
+		set => inventory = value;
         get { return inventory ?? (inventory = new Inventory()); }
     }
 

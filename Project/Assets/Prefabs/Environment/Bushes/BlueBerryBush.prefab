@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 758707665500716936}
   - component: {fileID: 6775729267958088711}
   - component: {fileID: 2065041660}
+  - component: {fileID: 696323276}
   m_Layer: 0
   m_Name: BlueBerryBush
   m_TagString: Untagged
@@ -190,6 +191,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!208 &696323276
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566194349517250238}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &3566194348303265993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -882,6 +899,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3566194349517250225}
     m_Modifications:
+    - target: {fileID: 6392431509110885559, guid: 359858c2110d3594d8d6e4d0f05690ce,
+        type: 3}
+      propertyPath: m_Name
+      value: Bush
+      objectReference: {fileID: 0}
     - target: {fileID: 6392431509110885562, guid: 359858c2110d3594d8d6e4d0f05690ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -936,11 +958,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392431509110885559, guid: 359858c2110d3594d8d6e4d0f05690ce,
-        type: 3}
-      propertyPath: m_Name
-      value: Bush
       objectReference: {fileID: 0}
     - target: {fileID: 6392431509110885563, guid: 359858c2110d3594d8d6e4d0f05690ce,
         type: 3}

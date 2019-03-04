@@ -44,9 +44,6 @@ public class AlienDoor : MonoBehaviour, IClickable
 		yield return new WaitForSeconds(.5f);
 		blackCoverImage.color = Color.black;
 		endScreen.SetActive(true);
-
-		yield return new WaitForSeconds(5f);
-		SceneManager.LoadScene(0);
 	}
 
 	private IEnumerator Darken()

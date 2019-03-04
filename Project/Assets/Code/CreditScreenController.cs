@@ -14,13 +14,13 @@ public class CreditScreenController : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if(!monsterMode && timer / 4 >= 2)
+        if(!monsterMode && timer / 2.5f >= 1f)
         {
             MonsterCam.SetActive(true);
             monsterMode = !monsterMode;
             timer = 0;
         }
-        else if (monsterMode && timer / 2 >= 2)
+        else if (monsterMode && timer / 2f >= .5f)
         {
             MonsterCam.SetActive(false);
             monsterMode = !monsterMode;

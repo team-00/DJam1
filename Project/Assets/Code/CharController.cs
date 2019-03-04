@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharController : MonoBehaviour
 {
@@ -169,5 +170,10 @@ public class CharController : MonoBehaviour
 		MonsterCam.gameObject.SetActive(true);
 		
 		fullyDead = true;
+
+		yield return new WaitForSeconds(5f);
+		GameManager.Instance.Inventory = null;
+		GameManager.Instance.CharacterStats = null;
+		SceneManager.LoadScene(0);
 	}
 }
