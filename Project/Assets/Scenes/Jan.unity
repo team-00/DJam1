@@ -1382,7 +1382,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-79664
+  m_Name: pb_Mesh276672
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -10801,6 +10801,7 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669906}
   - component: {fileID: 534669907}
+  - component: {fileID: 534669903}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10808,6 +10809,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &534669903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 200
+  m_RefResolutionX: 1920
+  m_RefResolutionY: 1080
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!20 &534669904
 Camera:
   m_ObjectHideFlags: 0
@@ -13541,7 +13562,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-80994
+  m_Name: pb_Mesh279560
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -14221,7 +14242,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-79668
+  m_Name: pb_Mesh276732
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -33709,6 +33730,16 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1826470156}
+    - target: {fileID: 8763009692432813097, guid: 421ec33f25962d942bcd56a7afd69607,
+        type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428340557554150687, guid: 421ec33f25962d942bcd56a7afd69607,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2551292539292196832, guid: 421ec33f25962d942bcd56a7afd69607,
         type: 3}
       propertyPath: m_SelectedEditorRenderState
@@ -37267,6 +37298,16 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6313251858015857550, guid: 32add3ca0f5fc9b4ca8297cc293105df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6313251858015857550, guid: 32add3ca0f5fc9b4ca8297cc293105df,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7374926873067763329, guid: 32add3ca0f5fc9b4ca8297cc293105df,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -37857,6 +37898,7 @@ GameObject:
   - component: {fileID: 1748270713}
   - component: {fileID: 1748270714}
   - component: {fileID: 1748270711}
+  - component: {fileID: 1748270715}
   m_Layer: 0
   m_Name: Monster Cam
   m_TagString: MainCamera
@@ -38092,6 +38134,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1748270715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748270709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 200
+  m_RefResolutionX: 1920
+  m_RefResolutionY: 1080
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!43 &1751006355
 Mesh:
   m_ObjectHideFlags: 0
